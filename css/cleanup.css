@@ -1,4 +1,4 @@
-#wall .tag-1 {
+.tag-1 {
   display: none;
 }
 
@@ -6,10 +6,26 @@
   display: none;
 }
 
-#tag2 + #tag-3.slick {
+div#wall #tag-3.slick {
   display: none;
 }
 
-#wall .parent {
+#wall #tag-4 {
   display: none;
+}
+
+div#wall .parent #tag-5.slick {
+  display: none;
+}
+
+div#wall div.parent div:last-child div#tag-6 {
+  background: url(../images/tag-6.png) no-repeat;
+  z-index: 2;
+  display: block;
+}
+
+body div#wall div.parent div > #tag-7.slick {
+  background: url(../images/tag-7.png) no-repeat;
+  z-index: 1;
+  display: block;
 }
